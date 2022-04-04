@@ -18,4 +18,11 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function Test_rota_primaria()
+    {
+        $response = $this->get('/list');
+
+        $response->assertStatus(200);
+    }
 }
