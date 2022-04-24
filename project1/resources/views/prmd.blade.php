@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Sobre Nós</h1>   
-  <p>Um Grupo de programadores de jogos que trabalham de forma independente 
-      e que sonham em produzir grandes jogos
-  </p>
+  <div class="container">
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin">Entrar</button>
+      <button id="btnSignup">Cadastrar</button>
+    </div>
+
+    <form id="signin">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Password" required />
+      <i class="fas fa-lock iPassword"></i>
+      <div class="divCheck">
+        <input type="checkbox" />
+        <span>Esqueci a senha</span>
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+
+    <form id="signup">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Password" required />
+      <i class="fas fa-lock iPassword"></i>
+      <input type="password" placeholder="Password" required />
+      <i class="fas fa-lock iPassword2"></i>
+      <div class="divCheck">
+        <input type="checkbox" required />
+        <span>Termos</span>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
